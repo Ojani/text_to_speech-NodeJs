@@ -1,6 +1,5 @@
 const express = require("express");
 const gTTS = require('gtts');
-const fs = require("fs");
 
 const app = express();
 
