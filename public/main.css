@@ -1,0 +1,121 @@
+body {
+    font-family: "Roboto", arial;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+section {
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-left: 50%;
+}
+
+#input {
+    font-family: "Roboto", arial;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    font-size: 16px;
+    display: block;
+    height: 100px;
+    width: 300px;
+    resize: none;
+}
+
+.clearBtn, .sendBtn {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .7);
+    background: #1588ff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 30px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 20px;
+    color: white;
+}
+
+.clearBtn {
+    background: red;
+}
+
+.sendBtn:hover {
+    background: #0477ee;
+}
+
+.clearBtn:hover {
+    background: #db0000;
+}
+
+
+input[type="checkbox"] {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 22px;
+}
+
+
+.lang {
+    margin-top: 20px;
+}
+
+select {
+    font-size: 18px;
+}
+
+.outputWrapper {
+    border-top: 2px solid grey;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    padding: 10px;
+    width: 300px;
+}
+
+.outputWrapper > h2 {
+    margin-top: 0;
+}
+
+.output {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.downloadBtn {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .7);
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 2em;
+    user-select: none;
+    margin-top: 1em;
+    cursor: pointer;
+    color: #1588ff;
+}
+
+
+.loader {
+    border: 10px solid #AFAFAF;
+    
+    border-top: 10px solid #1588ff;
+    border-radius: 50%;
+    padding: 25px;
+    height: 0;
+    width: 0;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}

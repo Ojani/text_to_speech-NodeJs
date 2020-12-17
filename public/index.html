@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./app.js"></script>
+
+</head>
+<body>
+
+    <h1 class="title">Google text to speech</h1>
+
+    <section>
+        <h2>Input</h2>
+        <textarea name="input" id="input" resi class="inputbox"> </textarea>
+
+        <div class="clearBtn">Clear</div>
+        <div class="sendBtn">Send</div>
+
+        <input type="checkbox" name="playback" id="playback"/>
+        <label for="playback">Play audio automatically</label>
+
+        <div class="lang">
+            <label for="lang">Language</label>
+            <select name="lang" id="lang">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+
+        <div class="outputWrapper">
+            <h2>Output</h2>
+
+            <div class="output"></div>
+        </div>
+    </section>
+    
+</body>
+</html>
