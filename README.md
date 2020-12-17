@@ -1,4 +1,4 @@
-# Text to speech node
+# Text to speech - NodeJs
 
 This is a very simple text to speech app built on the "gtts" library.
 It uses an Express server to do all the magic!
